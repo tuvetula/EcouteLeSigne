@@ -12,17 +12,17 @@
         <ul class="navbar-nav">
             <li class="nav-item">
                 <a class="nav-link" href="#" id="navbardrop">Particuliers</a>
-                <ul class="dropdown">
-                    <li><a href="">Atelier Bébés signeurs</a></li>
-                    <li><a href="">Atelier Com'Unique</a></li>
+                <ul class="dropdownUl">
+                    <li class="dropdownLi"><a href="">Atelier Bébés signeurs</a></li>
+                    <li class="dropdownLi"><a href="">Atelier Com'Unique</a></li>
                     <li><a href="">Groupe de parole</a></li>
                 </ul>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Professionnels</a>
-                <ul class="dropdown">
-                    <li><a href="">Atelier 1</a></li>
-                    <li><a href="">Atelier 2</a></li>
+                <ul class="dropdownUl">
+                    <li class="dropdownLi"><a href="">Atelier 1</a></li>
+                    <li class="dropdownLi"><a href="">Atelier 2</a></li>
                     <li><a href="">Atelier 3</a></li>
                 </ul>
             </li>
