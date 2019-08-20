@@ -5,15 +5,15 @@
             <nav>
                 <ul>
                     <li class="dropdown">
-                        <a href="javascript:void(0)" class="dropbtn">Parents</a>
+                        <a href="index.php?page=1" class="dropbtn">Parents</a>
                         <div class="dropdown-content">
-                            <a href="#">Link 1</a>
+                            <a href="#">Ateliers bébés signeurs</a>
                             <a href="#">Link 2</a>
                             <a href="#">Link 3</a>
                         </div>
                     </li>
                     <li class="dropdown">
-                        <a href="javascript:void(0)" class="dropbtn">Professionnels</a>
+                        <a href="index.php?page=2" class="dropbtn">Professionnels</a>
                         <div class="dropdown-content">
                             <a href="#">Link 1</a>
                             <a href="#">Link 2</a>
