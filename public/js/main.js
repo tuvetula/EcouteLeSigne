@@ -2,10 +2,12 @@ var content = document.querySelector('#hamburger-content');
 var sidebarBody = document.querySelector('#hamburger-sidebar-body');
 var button = document.querySelector('#hamburger-button');
 var overlay = document.querySelector('#hamburger-overlay');
+var connectBar = document.querySelector('#connectBar');
 var activatedClass = 'hamburger-activated';
 
 //Le contenu d'hamburger-content = contenu de hamburger-sidebar-body
 sidebarBody.innerHTML = content.innerHTML;
+sidebarBody.innerHTML += connectBar.innerHTML;
 
 //Evenement click sur bouton hamburger (Ajoute la class "hamburger-activated")
 button.addEventListener('click', function(e) {

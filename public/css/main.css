@@ -7,6 +7,142 @@ body {
     overflow: hidden;
 }
 
+header {
+    text-transform: uppercase;
+    background-color: rgb(238, 151, 151);
+    padding: 16px 0 16px 32px;
+    font-size: 15px;
+    box-shadow: 0 1px 16px rgba(0, 0, 0, .4);
+}
+
+#logo,
+nav,
+li {
+    display: inline-block;
+}
+
+li a,
+.button {
+    text-decoration: none;
+    color: #333;
+}
+
+.button {
+    text-transform: uppercase;
+    float: right;
+    margin-top: -16px;
+    line-height: 84px;
+    height: 84px;
+    text-decoration: none;
+    padding: 0 8px;
+    font-size: 0.8em;
+}
+
+.button-sign-up {
+    background-color: rgb(238, 151, 151);
+}
+
+#hamburger,
+#hamburger-content {
+    display: inline;
+}
+
+#hamburger-button {
+    display: none;
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 30px;
+    vertical-align: top;
+    padding: 0;
+    line-height: 47px;
+    float: right;
+    margin-right: 32px;
+    margin-top: 20px;
+}
+
+#hamburger-overlay {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .4);
+}
+
+#hamburger-sidebar {
+    box-sizing: border-box;
+    display: none;
+    position: absolute;
+    /* fixed */
+    width: 50%;
+    z-index: 20;
+    height: 100%;
+    top: 82px;
+    left: 0;
+    background-color: rgb(216, 178, 178);
+    overflow-y: auto;
+    transform: translateX(-100%);
+    transition: transform .2s ease-out;
+}
+
+#hamburger-sidebar li {
+    display: block;
+    width: 100%;
+}
+
+#hamburger-sidebar-header {
+    background: url(../images/sidebar-header.png) center;
+    background-size: cover;
+    height: 128px;
+}
+
+#hamburger-sidebar-body {
+    padding: 8px 8px;
+}
+
+
+/* icone
+#hamburger-sidebar-body li:before {
+    content: ' ';
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 4px;
+    margin-right: 16px;
+    width: 24px;
+    height: 24px;
+} */
+
+
+/* icones sidebar
+#hamburger-sidebar-body li:first-child:before {
+    background-image: url(../images/icons/discover.svg);
+}
+
+#hamburger-sidebar-body li:nth-child(2):before {
+    background-image: url(../images/icons/how.svg);
+}
+
+#hamburger-sidebar-body li:nth-child(3):before {
+    background-image: url(../images/icons/about.svg);
+}
+
+#hamburger-sidebar-body li:last-child:before {
+    background-image: url(../images/icons/qna.svg);
+} */
+
+#hamburger-sidebar-body .button {
+    margin-top: 16px;
+    text-align: center;
+    float: none;
+    display: block;
+    height: auto;
+    line-height: inherit;
+    padding: 10px;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -68,150 +204,16 @@ li.dropdown {
     display: block;
 }
 
-header {
-    text-transform: uppercase;
-    background-color: rgb(238, 151, 151);
-    padding: 16px 0 16px 32px;
-    font-size: 15px;
-    box-shadow: 0 1px 16px rgba(0, 0, 0, .4);
-}
 
-#logo,
-nav,
-li {
-    display: inline-block;
-}
+/* ------------------------------------------------------------------------------------------------ */
 
-nav {
-    display: inline-block;
-    line-height: 48px;
-    vertical-align: top;
-}
-
-li a,
-.button {
-    text-decoration: none;
-    color: #333;
-}
-
-.button {
-    text-transform: uppercase;
-    float: right;
-    margin-top: -16px;
-    line-height: 84px;
-    height: 84px;
-    text-decoration: none;
-    padding: 0 8px;
-    font-size: 0.8em;
-}
-
-.button-sign-up {
-    background-color: rgb(238, 151, 151);
-}
-
-#hamburger,
-#hamburger-content {
-    display: inline;
-}
-
-#hamburger-button {
-    display: none;
-    cursor: pointer;
-    background: none;
-    border: none;
-    font-size: 30px;
-    vertical-align: top;
-    padding: 0;
-    line-height: 47px;
-    float: right;
-    margin-right: 32px;
-    margin-top: 20px;
-}
-
-#hamburger-overlay {
-    display: none;
-    position: fixed;
-    z-index: 10;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, .4);
-}
-
-#hamburger-sidebar {
-    display: none;
-    position: fixed;
-    width: 50%;
-    z-index: 20;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-color: rgb(231, 31, 31);
-    overflow-y: auto;
-    transform: translateX(-100%);
-    transition: transform .2s ease-out;
-}
-
-#hamburger-sidebar li {
-    display: block;
-    width: 100%;
-}
-
-#hamburger-sidebar-header {
-    background: url(../images/sidebar-header.png) center;
-    background-size: cover;
-    height: 128px;
-}
-
-#hamburger-sidebar-body {
-    padding: 8px 8px;
-}
-
-
-/* icone
-#hamburger-sidebar-body li:before {
-    content: ' ';
-    display: inline-block;
-    vertical-align: middle;
-    margin-bottom: 4px;
-    margin-right: 16px;
-    width: 24px;
-    height: 24px;
-} */
-
-
-/* icones sidebar
-#hamburger-sidebar-body li:first-child:before {
-    background-image: url(../images/icons/discover.svg);
-}
-
-#hamburger-sidebar-body li:nth-child(2):before {
-    background-image: url(../images/icons/how.svg);
-}
-
-#hamburger-sidebar-body li:nth-child(3):before {
-    background-image: url(../images/icons/about.svg);
-}
-
-#hamburger-sidebar-body li:last-child:before {
-    background-image: url(../images/icons/qna.svg);
-} */
-
-#hamburger-sidebar-body .button {
-    margin-top: 16px;
-    text-align: center;
-    float: none;
-    display: block;
-    height: auto;
-    line-height: inherit;
-    padding: 10px;
-}
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 934px) {
     h1 {
         font-size: 42px;
         line-height: 56px;
+    }
+    #connectBar {
+        display: none;
     }
     #hamburger-content {
         display: none;

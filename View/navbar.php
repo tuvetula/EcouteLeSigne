@@ -28,14 +28,16 @@
                     <li><a href="index.php?page=8">Contact</a></li>
                 </ul>
             </nav>
-            <a href="#" class="button button-sign-up">S'inscrire</a>
-            <a href="#" class="button button-sign-in">Se connecter</a>
         </div>
         <button id="hamburger-button">&#9776;</button>
         <div id="hamburger-sidebar">
-            <div id="hamburger-sidebar-header"></div>
+            <!-- <div id="hamburger-sidebar-header"></div> -->
             <div id="hamburger-sidebar-body"></div>
         </div>
         <div id="hamburger-overlay"></div>
     </div>
 </header>
+<div id="connectBar">
+    <a href="#" class="button button-sign-up">S'inscrire</a>
+    <a href="#" class="button button-sign-in">Se connecter</a>
+</div>
