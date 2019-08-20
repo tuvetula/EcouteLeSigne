@@ -13,6 +13,7 @@ header {
     padding: 16px 0 16px 32px;
     font-size: 15px;
     box-shadow: 0 1px 16px rgba(0, 0, 0, .4);
+    display: flex;
 }
 
 #logo,
@@ -30,21 +31,21 @@ li a,
 .button {
     text-transform: uppercase;
     float: right;
-    margin-top: -16px;
-    line-height: 84px;
-    height: 84px;
-    text-decoration: none;
+    line-height: 40px;
     padding: 0 8px;
     font-size: 0.8em;
 }
 
-.button-sign-up {
-    background-color: rgb(238, 151, 151);
-}
-
 #hamburger,
 #hamburger-content {
-    display: inline;
+    width: 100%;
+    display: inline-flex;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
 #hamburger-button {
@@ -53,12 +54,8 @@ li a,
     background: none;
     border: none;
     font-size: 30px;
-    vertical-align: top;
     padding: 0;
     line-height: 47px;
-    float: right;
-    margin-right: 32px;
-    margin-top: 20px;
 }
 
 #hamburger-overlay {
@@ -143,7 +140,11 @@ li a,
     padding: 10px;
 }
 
-ul {
+nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -152,7 +153,7 @@ ul {
 }
 
 li {
-    float: left;
+    width: 100%;
     border-right: 1px solid rgb(147, 86, 216);
 }
 
@@ -160,8 +161,9 @@ li:last-child {
     border-right: none;
 }
 
-li a,
+nav ul li a,
 .dropbtn {
+    width: 100%;
     display: inline-block;
     font-size: 0.8em;
     color: rgb(0, 0, 0);
@@ -215,10 +217,16 @@ li.dropdown {
     #connectBar {
         display: none;
     }
+    #hamburger {
+        flex-direction: row-reverse;
+    }
     #hamburger-content {
         display: none;
     }
-    #hamburger-button,
+    #hamburger-button {
+        display: flex;
+        padding-right: 20px;
+    }
     #hamburger-sidebar,
     .hamburger-activated #hamburger-overlay {
         display: block;
@@ -234,10 +242,20 @@ li.dropdown {
         box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
         z-index: 1;
     }
+    nav ul {
+        flex-direction: column;
+    }
     nav ul li {
         border-right: none;
     }
+    nav ul li a,
+    .dropbtn {
+        text-align: left;
+    }
 }
+
+
+/* --------------------------------------------------------------------------------- */
 
 
 /* blockquote,
