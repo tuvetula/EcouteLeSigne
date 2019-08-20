@@ -2,8 +2,6 @@
 $title='Page d\'accueil';
 ob_start();
 ?>
-<h1>Ecoute Le Signe</h1>
-
 
 
 <?php
